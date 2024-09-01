@@ -1,3 +1,6 @@
+
+
+
 *{
   margin: 0;
   padding: 0;
@@ -22,7 +25,7 @@ nav{
   display: flex;
   gap: 1rem;
 }
-nav a{
+nav > a{
   color: white;
   text-decoration: none;
 }
@@ -31,11 +34,21 @@ nav a{
   display: flex;
   gap: 1rem;
 }
-.login a{
+.login > a{
   color: white;
   text-decoration: none;
 }
 
+.banners{
+  background-image: url("/BannerNextJs.jpg");
+  max-width: 2000px;
+  width: 100%;
+  height: 679px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
 
 
 
@@ -44,15 +57,17 @@ footer{
   color: white;
   padding: 1rem;
   text-align: center;
-  height: 200px;
+  max-height: 500px;
+  min-height: 550px;
+  height: 100%;
 }
-footer p{
+footer > p{
   margin: 0;
   font-size: 33px;
   margin-top: 40px;
 }
 
-.about h2{
+.about > h2{
   font-size: 43px;
   margin: 30px;
 }  
@@ -65,10 +80,11 @@ footer p{
   margin-top: 120px;
   margin-bottom: 40px;
 }
-.info p{
+.info > p{
   font-size: 25px;
   margin: 0;
   width: 800px;
+
 }
 
 .info-conatct{
@@ -99,7 +115,7 @@ footer p{
   padding: 20px;
 }
 
-.conatcts-inp button{
+.conatcts-inp > button{
   width: 200px;
   height: 40px;
   background-color: #2e2e2e;
@@ -140,4 +156,131 @@ button {
 
 button:hover {
   background-color: #005bb5;
+}
+
+.burgers{
+  display: none;
+}
+
+
+.close-button{
+  width: 60px;
+  position: absolute;
+  right: 30px;
+}
+
+.menu-items{
+  margin-top: 80px;
+}
+
+.menu-button-open{
+  display: none;
+  width: 60px;
+}
+
+
+@media only screen and (max-width: 665px) {
+  nav{
+    display: none;
+  }
+  .login{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+  .banner{
+    width: 100%;
+    place-items: center;
+    
+  }
+  .menu-button-open{
+    display: block;
+  }
+  .banners{
+    width: 100%;
+    background-image: url("/NextMobile.png");
+  }
+
+  .info{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+    margin-bottom: 40px;
+  }
+
+  .info > p{
+    font-size: 16px;
+    padding-right: 10px;
+  
+  }
+
+  .info-conatct{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-conatct > img{
+    margin-top: -50px;
+    width: 97%;
+  }
+  .conatcts-inp{
+    margin-top: -50px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+
+  form{
+    margin-left: auto;
+    margin-top: 20px;
+  }
+  
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  
+  button {
+    width: 70%;
+    padding: 10px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-bottom: 50px;
+
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .banners{
+    background-image: url("/NextsMobileJs.avif");
+  }
+  .info{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .info > img{
+    width: 300px;
+  }
+  .info > p{
+    font-size: 16px;
+    width: 340px;
+    margin-top: 40px;
+    text-align: left;
+  }
 }

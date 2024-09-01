@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import BurgerMenu from './BurgerMenu'
 function Header() {
   return (
    <header>
@@ -13,6 +14,7 @@ function Header() {
        <Link href="/login">Login</Link>
        <Link href="/register">Register</Link>
      </div>
+     <BurgerMenu />
    </header>
   )
 }
