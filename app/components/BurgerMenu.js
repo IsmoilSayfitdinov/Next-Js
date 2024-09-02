@@ -2,7 +2,6 @@
 
 import React from "react";
 import { useState } from "react";
-import Link from "next/link";
 function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -36,7 +35,7 @@ function BurgerMenu() {
         <ul className="menu-items" style={{ listStyleType: 'none', padding: 0}}>
           <li style={{ marginBottom: '20px' }}><a href="/" onClick={toggleMenu} style={{ color: 'white', textDecoration: 'none', fontSize: '24px' }}>Home</a></li>
           <li style={{ marginBottom: '20px' }}><a href="/about" onClick={toggleMenu} style={{ color: 'white', textDecoration: 'none', fontSize: '24px' }}>About</a></li>
-          <li style={{ marginBottom: '20px' }}><a href="#" onClick={toggleMenu} style={{ color: 'white', textDecoration: 'none', fontSize: '24px' }}>Services</a></li>
+          <li style={{ marginBottom: '20px' }}><a href="/post" onClick={toggleMenu} style={{ color: 'white', textDecoration: 'none', fontSize: '24px' }}>Post</a></li>
           <li style={{ marginBottom: '20px' }}><a href="/contact" onClick={toggleMenu} style={{ color: 'white', textDecoration: 'none', fontSize: '24px' }}>Contact</a></li>
         </ul>
         <ul className="menu-items" style={{ listStyleType: 'none', padding: 0}}>

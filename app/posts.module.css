@@ -1,0 +1,43 @@
+.posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px
+  }
+  
+.post{
+    width: 80%;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+}
+
+.text__post{
+    width: 100%;
+    position: relative;
+}
+
+
+
+
+.text__post > h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(59, 59, 59);
+}
+
+.text__post > a{
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+}
+
+.like_and_comments__count{
+    display: flex;
+    position: absolute;
+    gap: 1rem;
+    right: 20px;
+    bottom: 0;
+}
