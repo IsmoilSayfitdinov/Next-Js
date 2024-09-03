@@ -41,3 +41,44 @@
     right: 20px;
     bottom: 0;
 }
+
+.post_id__main{
+    display: flex;
+}
+
+.post_id__main > img{
+    width: 600px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.post_id__main > div{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.post_id__main > div> h1{
+    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: rgb(59, 59, 59);
+}
+
+.user__username{
+    margin-top: 20px;
+}
+
+.post_id__main > div > div{
+    margin-top: 40px;
+}
+
+.post_id__main > div > div > p{
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+
+.post_id__comments_block{
+    
+}

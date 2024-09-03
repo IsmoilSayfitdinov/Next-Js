@@ -15,14 +15,14 @@ function page() {
             }
         })
             .then(res => res.json())
-            .then(data => setPosts(data.results))
+            .then(data => setPosts(data?.results))
     }, [])
     console.log(posts);
     
 
   return (
     <div className={styles.posts}>
-        {posts.map((post) => (
+        {posts?.map((post) => (
             <div className={styles.post} key={post.id}>
                 <Link href={`/post/${post.id}`}><img src={post.image} alt="post" width={170} height={180} /></Link>
                 <div className={styles.text__post}>
